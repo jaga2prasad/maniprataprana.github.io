@@ -1,0 +1,76 @@
+body {
+    padding-top: 100px;
+}
+.tile {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    display: none;
+}
+.tile:hover .overlay {
+    display: block;
+    text-align: center;
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    transition: background 0.2s ease, padding 0.8s linear;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.overlay span {
+    position: relative;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.tile.purple,
+.tile.blue,
+.tile.red,
+.tile.orange,
+.tile.green,
+.tile.yellow {
+    color: #fff;
+}
+.tile.purple {
+    background: #5133AB;
+}
+.tile.purple:hover {
+    background: #3e2784;
+}
+.tile.red {
+    background: #AC193D;
+}
+.tile.red:hover {
+    background: #7f132d;
+}
+.tile.green {
+    background: #00A600;
+}
+.tile.green:hover {
+    background: #007300;
+}
+.tile.blue {
+    background: #2672EC;
+}
+.tile.blue:hover {
+    background: #125acd;
+}
+.tile.orange {
+    background: #DC572E;
+}
+.tile.orange:hover {
+    background: #b8431f;
+}
+.tile.yellow {
+    background: #FFD700;
+}
+.tile.yellow:hover {
+    background: #DAA520;
+}
